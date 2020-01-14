@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>UnicoRns are real</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Travis Gerke, ScD" />
+    <link rel="stylesheet" href="moffitt-xaringan.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: center middle hide-count hide-logo
+background-image: url(figures/moffittlogo.png)
+background-size: 22%
+background-position: bottom 5% right 5%
+
+&lt;div class="talk-logo swivel-horizontal"&gt;&lt;/div&gt;
+
+&lt;!--.talk-title[
+.talk-title-main.moffitt-blue[UnicoRns are real]
+]--&gt;
+
+.talk-meta[
+  .talk-author[Travis Gerke, ScD]
+  
+  &lt;!-- https://fontawesome.com/license --&gt;
+  .talk-date[&lt;img src="figures/twitter-brands.svg" alt="Twitter logo" width="24px"/&gt; @travisgerke]
+  
+  .talk-auth2[w/ Donna C. Evans]
+]
+
+---
+
+### Parody?
+
+.w-50.h-center[
+![](figures/rasgon-tweet.png)
+]
+
+---
+
+&lt;style type="text/css"&gt;
+.talk-logo {
+  width: 480px;
+  height: 556px;
+  position: absolute;
+  top: 5%;
+  left: calc(50% - 240px);
+  background-image: url('figures/unicorn_hex.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.talk-title {
+  font-family: Overpass;
+}
+.talk-title .talk-title-main {
+  font-size: 2.3em;
+  font-weight: bold;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 100%;
+}
+.talk-title .talk-title-sub {
+  font-size: 1.28em;
+  position: absolute;
+  top: 66%;
+  width: 100%;
+  left: 0;
+}
+.talk-meta {
+  font-family: Overpass;
+  position: absolute;
+  text-align: left;
+  bottom: 25px;
+  left: 35px;
+}
+.talk-meta p {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+.talk-title {
+  margin-bottom: 5em;
+  text-align: center;
+}
+.talk-author {
+  color: #444;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+.talk-date {
+  color: #666;
+  font-size: 1.25em;
+  line-height: 0;
+  margin-top: 0;
+}
+.talk-auth2 {
+  color: #666;
+  font-size: 1em;
+  line-height: 0;
+  margin-top: 0;
+}
+
+.hide-count .remark-slide-number {
+  display: none;
+}
+
+@keyframes swivel-horizontal {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.remark-visible .swivel-horizontal {
+  animation-name: swivel-horizontal;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.w-50 {
+  width: 50%;
+}
+.h-center {
+  margin: 0 auto;
+}
+.v-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+&lt;/style&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
