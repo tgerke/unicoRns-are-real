@@ -2,13 +2,15 @@
 
 [slides]: https://tgerke.github.io/unicoRns-are-real/
 
+Travis Gerke &#38; Donna Evans
+
 This is a 15-minute talk most recently given at [rstudio:conf 2020](https://web.cvent.com/event/36ebe042-0113-44f1-8e36-b9bc5d0733bf/).
 
 &#x1F4FA; [View slides][slides]
 
 &#x270D;&#xFE0F; Abstract: 
 
-Leaning objective: This talk argues that “data science unicorns” are common among the R user base, and gives suggestions for next generation job descriptions that improve matchmaking between R job seekers and hiring organizations.
+<i>Leaning objective:</i> This talk argues that “data science unicorns” are common among the R user base, and gives suggestions for next generation job descriptions that improve matchmaking between R job seekers and hiring organizations.
 
 Common advice from experienced data scientists to job-seekers is to avoid job postings that describe a "data science unicorn": someone who has experience performing an unrealistically large array of technical and business-related job duties. Seeking a unicorn is viewed as a potential indicator that the company fails to understand their data science needs, and that new hires will not be poised for success due to lacking support and resources [Robinson & Nolis, 2019].
 
