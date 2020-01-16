@@ -26,6 +26,8 @@ knitr::opts_chunk$set(
 )
 
 library(tidyverse)
+
+xaringanExtra::use_xaringan_extra(c("animate_css", "text_poster"))
 ```
 
 class: center middle hide-count hide-logo
@@ -49,11 +51,39 @@ background-position: bottom 5% right 5%
 ]
 
 ---
+class: center middle
+
+`r xaringanExtra::text_poster(
+  "I strive to  
+  recruit the most 
+  talented data scientists
+  and compensate them accordingly."
+)`
+
+.footnote.pull-right[— Every good data science manager ever]
+
+```{css echo=FALSE}
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100');
+
+.text-poster {
+	font-family: 'Merriweather', serif;
+}
+```
+
+---
 
 ### Parody?
 
 .w-50.h-center[
 ![](figures/rasgon-tweet.png)
+]
+
+---
+
+### Truth?
+
+.v-center[
+![](figures/enemy.gif)
 ]
 
 ---
