@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
     <title>UnicoRns are real</title>
     <meta charset="utf-8" />
@@ -33,23 +33,30 @@ background-position: bottom 5% right 5%
   &lt;!-- https://fontawesome.com/license --&gt;
   .talk-date[&lt;img src="figures/twitter-brands.svg" alt="Twitter logo" width="24px"/&gt; @travisgerke]
   
-  .talk-auth2[w/ Donna C. Evans]
+  .talk-auth2[w/ Donna C. Evans] &lt;!--Senior Compensation Consultant--&gt;
 ]
 
 ---
-class: center middle
+class: center inverse strive-to-recruit
 
-<div class="text-poster" style="width:100%;height:100%;padding:1em;">
-<div class="text-poster__text" data-text="I strive to  &#10;  recruit the most &#10;  talented data scientists&#10;  and compensate them accordingly."></div>
+<div class="text-poster" style="width:90%;height:85%;padding:1em;">
+<div class="text-poster__text" data-text="I strive to recruit the &#10;  most talented &#10;  data scientists and&#10;  compensate them accordingly."></div>
 </div>
 
-.footnote.pull-right[— Every good data science manager ever]
+.footnote.pull-right.moffitt-grey[— _Every good data science manager ever_]
 
 &lt;style type="text/css"&gt;
-@import url('https://fonts.googleapis.com/css?family=Merriweather:100');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
 
 .text-poster {
 	font-family: 'Merriweather', serif;
+  margin: 0 auto;
+}
+.strive-to-recruit .text-poster .line-container .line:nth-child(2) {
+  color: #82c878;
+}
+.strive-to-recruit {
+  background: #00589a;
 }
 &lt;/style&gt;
 
@@ -62,14 +69,128 @@ class: center middle
 ]
 
 ---
+class: inverse hide-count
+background-image: url('figures/enemy.gif')
+background-size: cover
 
-### Truth?
+# Truth?
 
+---
+
+### Is there another way?
+
+.pull-left[
+.center[
+![](figures/highresrollsafe.jpg)
+HR can't do a market salary benchmark analysis for a person that doesn't exist
+]
+]
+
+--
+
+.pull-right[
 .v-center[
-![](figures/enemy.gif)
+![](figures/dabbingunicorn.jpg)
+]
+]
+&lt;!-- credit to vectorstock.com/22698768 --&gt;
+
+---
+layout: true
+class: job-posting animated fadeIn
+
+### Data Scientist wanted! (1/2)
+
+Seeking data scientists with hands on experience transforming unique data into amazing products. You will have access to an enormous amount of high-value business activity data. You will participate in the end-to-end processes of product development using .one[machine learning], from proof of concept to .two[deploying models in production]. Your work will directly impact the developer experience in .three[building applications], as well as the customer experience when interacting with them.
+
+* Working closely with Software Engineers and Product/Technical Services Mangers to drive analysis and performance improvements
+* .four[Developing and implementing cloud-based security solutions] providing data protection and governance, and improving customer experience
+* Working with internal business teams to .five[integrate data and decision-making]
+* Build intelligence into our services to make them run smarter with a responsible application of Machine Learning.
+
+---
+class: full 
+
+---
+class: job-posting-one
+
+---
+class: job-posting-two
+
+---
+class: job-posting-three
+
+---
+class: job-posting-four
+
+---
+class: job-posting-five
+
+---
+layout: false
+
+### Data Scientist wanted! (2/2)
+
+.w-85.h-center[
+![](figures/reqs.png)
 ]
 
 ---
+
+### Data Scientist wanted! (2/2)
+
+.w-85.h-center[
+![](figures/reqs-hex.png)
+]
+
+---
+
+### Challenge: job descriptions that map to appropriate salaries
+
+.pull-left[
+&gt; A common listing describes a unicorn...
+
+&gt; These types of job descriptions usually mean the company doesn’t know what they’re looking for, and they expect a data scientist to come and solve all their problems without any support.
+
+.w-25.h-center[
+![](figures/build-career.jpg)
+]
+]
+
+--
+
+.pull-right[
+But unicoRns are real and should be compensated as such!
+
+.w-50.h-center[
+![](figures/unicorn_hex.png)
+]
+]
+
+---
+
+### The job description to offer pipeline
+
+Hiring manager writes a job description
+* States the primary purpose, expected deliverables
+* Requirements for technical skills, prior experience, and/or education
+
+--
+
+HR benchmarks a market price using the following criteria
+* Hourly or salary
+* Type of contributor: technician, professional, scientist
+* Level of contributor: entry, intermediate, senior, principal
+
+--
+
+Benchmarking data are from purchased compensation surveys that require licensure
+* HR will aggregate across several such sources to derive a salary range
+* The ultimate offer varies somewhat by company's compensation philosophy
+
+---
+
+&lt;img src="index_files/figure-html/unnamed-chunk-2-1.png" width="720" /&gt;
 
 &lt;style type="text/css"&gt;
 .talk-logo {
@@ -78,7 +199,7 @@ class: center middle
   position: absolute;
   top: 5%;
   left: calc(50% - 240px);
-  background-image: url('figures/unicorn_hex.png');
+  background-image: url('figures/unicorn_hex_title.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -158,8 +279,14 @@ class: center middle
   animation-iteration-count: infinite;
 }
 
+.w-25 {
+  width: 25%;
+}
 .w-50 {
   width: 50%;
+}
+.w-85 {
+  width: 85%;
 }
 .h-center {
   margin: 0 auto;
@@ -169,6 +296,19 @@ class: center middle
   justify-content: center;
   align-items: center;
 }
+
+.job-posting:not(.full) {
+  color: #aaa;
+}
+
+.job-posting-one .one,
+.job-posting-two .two,
+.job-posting-three .three,
+.job-posting-four .four,
+.job-posting-five .five {
+  color: #eb1455;
+}
+
 &lt;/style&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
@@ -218,24 +358,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 (function() {

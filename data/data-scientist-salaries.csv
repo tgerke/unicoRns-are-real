@@ -1,0 +1,36 @@
+Job Title,Geography,Q1,Median,Q3
+Data Scientist I,All United States,57.1,63.3,65.9
+Data Scientist I,Middle Atlantic (Region),59.7,66.1,68.9
+Data Scientist I,Midwest (Region),57.2,63.4,66.1
+Data Scientist I,Northeast (Region),61,67.6,70.4
+Data Scientist I,South (Region),55.6,61.6,64.2
+Data Scientist I,"Tampa,FL (Metro)",55.1,61,63.6
+Data Scientist I,West (Region),60.9,67.5,70.3
+Data Scientist II,All United States,74.6,82.1,88.8
+Data Scientist II,Middle Atlantic (Region),77.9,85.8,92.7
+Data Scientist II,Midwest (Region),74.8,82.3,89
+Data Scientist II,Northeast (Region),79.7,87.7,94.8
+Data Scientist II,South (Region),72.7,80,86.5
+Data Scientist II,"Tampa,FL (Metro)",72,79.2,85.6
+Data Scientist II,West (Region),79.6,87.6,94.7
+Data Scientist III,All United States,94,105.7,117.4
+Data Scientist III,Middle Atlantic (Region),98.2,110.4,122.6
+Data Scientist III,Midwest (Region),94.2,105.9,117.6
+Data Scientist III,Northeast (Region),100.4,112.9,125.3
+Data Scientist III,South (Region),91.5,102.9,114.3
+Data Scientist III,"Tampa,FL (Metro)",90.6,102,113.2
+Data Scientist III,West (Region),100.2,112.7,125.2
+Data Scientist IV,All United States,111.8,126.3,140.7
+Data Scientist IV,Middle Atlantic (Region),116.6,131.6,146.7
+Data Scientist IV,Midwest (Region),111.8,126.1,141
+Data Scientist IV,Northeast (Region),118.9,134.4,149.9
+Data Scientist IV,South (Region),108.9,122.9,136.9
+Data Scientist IV,"Tampa,FL (Metro)",108,122,136
+Data Scientist IV,West (Region),118.7,134.1,149.3
+Data Scientist V,All United States,136.3,150.3,167
+Data Scientist V,Middle Atlantic (Region),142.1,156.7,174.1
+Data Scientist V,Midwest (Region),136.6,150.6,167.3
+Data Scientist V,Northeast (Region),145.1,160,177.8
+Data Scientist V,South (Region),132.9,146.6,162.9
+Data Scientist V,"Tampa,FL (Metro)",131.7,145.3,161.4
+Data Scientist V,West (Region),144.9,159.8,177.6
