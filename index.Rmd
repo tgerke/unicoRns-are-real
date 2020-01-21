@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
 
 library(tidyverse)
 
-xaringanExtra::use_xaringan_extra(c("animate_css", "text_poster"))
+xaringanExtra::use_xaringan_extra(c("animate_css", "text_poster", "panelset"))
 ```
 
 class: center middle hide-count hide-logo
@@ -209,7 +209,27 @@ Benchmarking data are from purchased compensation surveys that require licensure
 
 ---
 
-```{r, echo=FALSE}
+.panelset[
+.panel[.panel-name[Data Scientist I]
+* JD
+]
+.panel[.panel-name[II]
+* JD 2
+]
+.panel[.panel-name[III]
+* JD 3
+]
+.panel[.panel-name[IV]
+* JD 4
+]
+.panel[.panel-name[V]
+* JD 5
+]
+]
+
+---
+
+```{r, echo=FALSE, fig.width = 13, fig.height = 9}
 library(tidyverse)
 
 dat <- read_csv(here::here("data", "data-scientist-salaries.csv"))
@@ -225,7 +245,9 @@ dat %>%
    coord_flip() +
    labs(x = NULL, y = "Annual salary") +
    scale_y_continuous(labels = scales::dollar_format(suffix = "k")) + 
-   theme(legend.position = "bottom")
+   theme(legend.position = "bottom") + 
+   ggtitle("Aggregated survey data for Data Scientist salaries by US region")
+
 ```
 
 ```{css, echo=FALSE}
