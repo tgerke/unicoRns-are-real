@@ -1,6 +1,6 @@
 ## UnicoRns are real
 
-[slides]: https://tgerke.github.io/unicoRns-are-real/
+[slides]: https://unicoRns-are-real.netlify.com/
 
 Travis Gerke &#38; Donna Evans
 
