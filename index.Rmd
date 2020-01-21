@@ -298,6 +298,29 @@ dat %>%
 
 ```
 
+---
+
+### A preview: the unicoRn map
+
+.w-85.h-center[
+![](figures/map.png)
+]
+
+---
+
+### MASSIVE THANKS &#x1F44F;
+
+* Donna Evans, HR guru 
+* Jordan Creed, unicoRn hex sticker guru
+* Garrick Aden-Buie, `xaringanExtra` creator and all around CSS/JS guru
+* Emily Robinson & Jacqueline Nolis, gurus of writing the best career book
+
+&#x1F4FA; https://github.com/tgerke/unicoRns-are-real
+
+.w-25.h-center[
+![](figures/unicorn_hex.png)
+]
+
 ```{css, echo=FALSE}
 .talk-logo {
   width: 480px;
