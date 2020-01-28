@@ -190,6 +190,8 @@ But unicoRns are real and should be compensated as such!
 
 ### The job description to offer pipeline
 
+--
+
 Hiring manager writes a job description
 * States the primary purpose, expected deliverables
 * Requirements for technical skills, prior experience, and/or education
@@ -215,7 +217,7 @@ Benchmarking data are from purchased compensation surveys that require licensure
 * Independently merge and tidy data from multiple source systems, then conduct appropriate summarization or statistical analyses according to business stakeholder needs
 * Use data and visualizations to inform business solutions for organizational leaders
 * Organize databases, analyses, and reports into user-accessable and reproducible repositories
-* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret
+* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret .moffitt-orange[[insert required basket of R needs here]]
 * May require an advanced degree
 * 0-2 years of related experience preferred
 
@@ -229,7 +231,7 @@ Benchmarking data are from purchased compensation surveys that require licensure
 * Independently merge and tidy data from multiple source systems, then conduct appropriate summarization or statistical analyses according to business stakeholder needs
 * Use data and visualizations to inform business solutions for organizational leaders
 * Organize databases, analyses, and reports into user-accessable and reproducible repositories
-* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret
+* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret .moffitt-orange[[insert required basket of R needs here]]
 * May require an advanced degree
 * 2-4 years of related experience typically required
 
@@ -242,7 +244,7 @@ Benchmarking data are from purchased compensation surveys that require licensure
 * Independently merge and tidy data from multiple source systems, then conduct appropriate summarization or statistical analyses according to business stakeholder needs
 * Use data and visualizations to inform business solutions for organizational leaders
 * Organize databases, analyses, and reports into user-accessable and reproducible repositories
-* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret
+* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret .moffitt-orange[[insert required basket of R needs here]]
 * Typically requires either advanced degree or 4-7 years of related experience, or an appropriate mix of the two
 
 <i>Notes:</i>
@@ -254,7 +256,7 @@ Benchmarking data are from purchased compensation surveys that require licensure
 * Independently merge and tidy data from multiple source systems, then conduct appropriate summarization or statistical analyses according to business stakeholder needs
 * Use data and visualizations to inform business solutions for organizational leaders
 * Organize databases, analyses, and reports into user-accessable and reproducible repositories
-* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret
+* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret .moffitt-orange[[insert required basket of R needs here]]
 * Typically requires either advanced degree or 7+ years of related experience, or an appropriate mix of the two
 
 <i>Notes:</i>
@@ -266,7 +268,7 @@ Benchmarking data are from purchased compensation surveys that require licensure
 * Independently merge and tidy data from multiple source systems, then conduct appropriate summarization or statistical analyses according to business stakeholder needs
 * Use data and visualizations to inform business solutions for organizational leaders
 * Organize databases, analyses, and reports into user-accessable and reproducible repositories
-* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret
+* Preferred R stack experience: tidyverse including dbplyr, R markdown, Shiny, caret .moffitt-orange[[insert required basket of R needs here]]
 * Typically requires either advanced degree or 10+ years of related experience, or an appropriate mix of the two
 
 <i>Notes:</i>
@@ -407,6 +409,8 @@ dat %>%
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+.moffitt-orange { color: #faa555; }
 
 .w-25 {
   width: 25%;
