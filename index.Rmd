@@ -198,14 +198,14 @@ Hiring manager writes a job description
 
 --
 
-HR benchmarks a market price using the following criteria
+HR classifies the role
 * Hourly or salary
 * Type of contributor: technician, professional, scientist
 * Level of contributor: entry, intermediate, senior, principal
 
 --
 
-Benchmarking data are from purchased compensation surveys that require licensure
+Role-specific salary benchmarking data are from purchased compensation surveys
 * HR will aggregate across several such sources to derive a salary range
 * The ultimate offer varies somewhat by company's compensation philosophy
 
@@ -391,22 +391,34 @@ p
 
 ---
 
-### Key points
+### Concluding remarks
+
+--
 
 * Primary drivers of salary estimates are experience and autonomy
    + These drivers may evolve in the data science domain
    + Corollary: You probably don't need to learn fancy new language X to get the job you want
-   
+  
+--
+
 * Salary surveys are not yet capturing specific data science roles
    + E.g. machine learning engineer, decision scientist
+
+--
+
+* This talk is not arguing for or against the current process
+   + Simply reporting the pipeline that is common to large organizations to:
+      + Empower you, the unicoRn, to capture the compensation you deserve
+      + Empower managers to recruit and compensate the unicoRns they need 
 
 ---
 
 ### MASSIVE THANKS &#x1F44F;
 
 * Donna Evans, HR guru 
-* Jordan Creed, unicoRn hex sticker guru
-* Garrick Aden-Buie, `xaringanExtra` creator and all around CSS/JS guru
+* Jordan Creed (@jhcreed), unicoRn hex sticker guru
+* Garrick Aden-Buie (@grrrck), `xaringanExtra` creator + all around CSS/JS guru
+* Tampa R Users Group (@UseRTampa), the feedback gurus
 * Emily Robinson & Jacqueline Nolis, gurus of writing the best career book
 
 &#x1F4FA; https://github.com/tgerke/unicoRns-are-real
