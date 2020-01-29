@@ -408,7 +408,7 @@ p
 --
 
 * This talk is not arguing for or against the current process
-   + Simply reporting the pipeline that is common to large organizations to:
+   + Instead, reporting the pipeline that is common to large organizations to:
       + Empower you, the unicoRn, to capture the compensation you deserve
       + Empower managers to recruit and compensate the unicoRns they need 
 
@@ -420,7 +420,7 @@ p
 * Jordan Creed ([@jhcreed](https://twitter.com/jhcreed)), unicoRn hex sticker guru
 * Garrick Aden-Buie [@grrrck](https://twitter.com/grrrck), `xaringanExtra` creator + all around CSS/JS guru
 * Tampa R Users Group [@UseRTampa](https://twitter.com/UseRTampa/), the feedback gurus
-* Emily Robinson & Jacqueline Nolis, gurus of writing [the best career book](https://www.manning.com/books/build-a-career-in-data-science)
+* [Emily Robinson](https://twitter.com/robinson_es) & [Jacqueline Nolis](https://twitter.com/skyetetra), gurus of writing [the best career book](https://www.manning.com/books/build-a-career-in-data-science)
 
 &#x1F4FA; https://github.com/tgerke/unicoRns-are-real
 
