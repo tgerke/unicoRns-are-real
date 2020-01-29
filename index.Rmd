@@ -302,11 +302,103 @@ dat %>%
 
 ---
 
-### A preview: the unicoRn map
+```{r load, echo=FALSE, include=FALSE}
+library(glue)
 
-.w-85.h-center[
-![](figures/map.png)
+dat <- read_rds(here::here("data", "salary-with-coords.rds"))
+tampa_dat <- read_csv(here::here("data", "data-scientist-salaries.csv")) %>%
+   filter(grepl("Tampa", Geography))
+
+# filter down to the following occupations suggested by Donna,
+# optionally in highly populated areas via slice
+# Computer and Mathematical Occupations
+# Computer and Information Research Scientists
+# Computer and Information Analysts
+comp_dat <- dat %>%
+   filter(grepl("Computer and ", occ_title)) %>%
+   arrange(desc(tot_emp)) #%>% 
+   #slice(1:2000) 
+
+# average over the 3 professions within areas
+avg_analyst <- comp_dat %>% pivot_wider(id_cols = c(area_title, bbox_arr),
+                     names_from = occ_title, 
+                     values_from = a_median) %>% 
+   mutate(comp_salary = select(., starts_with("Comp")) %>% rowMeans(na.rm = TRUE)) %>%
+   filter(!is.na(comp_salary))
+
+# assign some global values for readability
+tampa_base <- avg_analyst %>% filter(grepl("Tampa", area_title)) %>% pull(comp_salary)
+DS1 <- tampa_dat %>% filter(`Job Title` == "Data Scientist I") %>% pull(Median)
+DS2 <- tampa_dat %>% filter(`Job Title` == "Data Scientist II") %>% pull(Median)
+DS3 <- tampa_dat %>% filter(`Job Title` == "Data Scientist III") %>% pull(Median)
+DS4 <- tampa_dat %>% filter(`Job Title` == "Data Scientist IV") %>% pull(Median)
+DS5 <- tampa_dat %>% filter(`Job Title` == "Data Scientist V") %>% pull(Median)
+
+avg_analyst <- avg_analyst %>% 
+   mutate(multiplier = comp_salary/tampa_base) %>%
+   mutate(`Data Scientist I` = multiplier*DS1*1000,
+          `Data Scientist II` = multiplier*DS2*1000,
+          `Data Scientist III` = multiplier*DS3*1000,
+          `Data Scientist IV` = multiplier*DS4*1000,
+          `Data Scientist V` = multiplier*DS5*1000)
+
+# also import county shape data for map 
+cnty <- ggplot2::map_data("county")
+
+# wrangle for plot
+avg_analyst <- avg_analyst %>% 
+   select(area_title, starts_with("Data Sci"), bbox_arr) %>%
+   mutate(group = group_indices(., area_title)) %>%
+   mutate(bbox_arr = str_replace_all(bbox_arr, "[{}]", "")) %>%
+   separate(bbox_arr, into = c("lon1", "lat1", "lon2", "lat2"), sep = ",", convert = TRUE) %>% 
+   group_by(area_title) %>%
+   pivot_longer(c(lon1, lon2), values_to = "lon") %>%
+   slice(rep(row_number(), each = 2)) %>% 
+   mutate(order = row_number()) %>%
+   mutate(lat = case_when(
+      order == 1 ~ lat2,
+      order == 2 ~ lat1,
+      order == 3 ~ lat1,
+      order == 4 ~ lat2
+   )) %>% 
+   ungroup() %>%
+   select(-c(lat1, lat2, name)) %>%
+   mutate(text = glue::glue("{area_title}", "&lt;br /&gt;",
+                            "Data Scientist I: ", "{scales::dollar(`Data Scientist I`, accuracy=1L)}", "&lt;br /&gt;", 
+                            "Data Scientist II: ", "{scales::dollar(`Data Scientist II`)}", "&lt;br /&gt;",
+                            "Data Scientist III: ", "{scales::dollar(`Data Scientist III`)}", "&lt;br /&gt;",
+                            "Data Scientist IV: ", "{scales::dollar(`Data Scientist IV`)}", "&lt;br /&gt;",
+                            "Data Scientist V: ", "{scales::dollar(`Data Scientist V`)}", "&lt;br /&gt;"))
+         
+p <- avg_analyst %>% 
+   mutate(Median = scales::dollar(`Data Scientist I`)) %>%
+   ggplot(aes(lon, lat, group=group, text=text)) + 
+   borders("state", colour = "gray") + 
+   coord_map(projection = "albers", lat0 = 39, lat1 = 45) + 
+   ggiraph::geom_polygon_interactive(aes(fill=`Data Scientist I`, tooltip = text),
+                show.legend = TRUE, colour=NA, alpha=0.7) +
+   ggthemes::theme_map() + 
+   theme(legend.position = "none") + 
+   ggtitle("The unicoRn map", subtitle = "Median salary estimates by area")
+p <- ggiraph::girafe(ggobj = p)
+```
+
+.map-position[
+```{r plot, echo=FALSE, include=TRUE}
+p
+```
 ]
+
+---
+
+### Key points
+
+* Primary drivers of salary estimates are experience and autonomy
+   + These drivers may evolve in the data science domain
+   + Corollary: You probably don't need to learn fancy new language X to get the job you want
+   
+* Salary surveys are not yet capturing specific data science roles
+   + E.g. machine learning engineer, decision scientist
 
 ---
 
@@ -440,6 +532,13 @@ dat %>%
 .job-posting-four .four,
 .job-posting-five .five {
   color: #eb1455;
+}
+
+.map-position {
+  position: absolute;
+  top: -20%;
+  width: 100%;
+  left: 0;
 }
 
 ```
