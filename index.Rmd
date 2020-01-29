@@ -396,6 +396,7 @@ p
 --
 
 * Primary drivers of salary estimates are experience and autonomy
+
    + These drivers may evolve in the data science domain
    + Corollary: You probably don't need to learn fancy new language X to get the job you want
   
@@ -416,10 +417,10 @@ p
 ### MASSIVE THANKS &#x1F44F;
 
 * Donna Evans, HR guru 
-* Jordan Creed (@jhcreed), unicoRn hex sticker guru
-* Garrick Aden-Buie (@grrrck), `xaringanExtra` creator + all around CSS/JS guru
-* Tampa R Users Group (@UseRTampa), the feedback gurus
-* Emily Robinson & Jacqueline Nolis, gurus of writing the best career book
+* Jordan Creed ([@jhcreed](https://twitter.com/jhcreed)), unicoRn hex sticker guru
+* Garrick Aden-Buie [@grrrck](https://twitter.com/grrrck), `xaringanExtra` creator + all around CSS/JS guru
+* Tampa R Users Group [@UseRTampa](https://twitter.com/UseRTampa/), the feedback gurus
+* Emily Robinson & Jacqueline Nolis, gurus of writing [the best career book](https://www.manning.com/books/build-a-career-in-data-science)
 
 &#x1F4FA; https://github.com/tgerke/unicoRns-are-real
 
