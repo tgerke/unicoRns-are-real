@@ -397,8 +397,8 @@ p
 
 * Primary drivers of salary estimates are experience and autonomy
 
-   + These drivers may evolve in the data science domain
    + Corollary: You probably don't need to learn fancy new language X to get the job you want
+   + These drivers may evolve in the data science domain
   
 --
 
@@ -417,14 +417,17 @@ p
 ### MASSIVE THANKS &#x1F44F;
 
 * Donna Evans, HR guru 
-* Jordan Creed ([@jhcreed](https://twitter.com/jhcreed)), unicoRn hex sticker guru
-* Garrick Aden-Buie [@grrrck](https://twitter.com/grrrck), `xaringanExtra` creator + all around CSS/JS guru
+* Jordan Creed [@jhcreed](https://twitter.com/jhcreed), unicoRn hex sticker guru
+* Garrick Aden-Buie [@grrrck](https://twitter.com/grrrck), `xaringanExtra` &#x1F4E6; + all around CSS/JS guru
+* David Gohel [@DavidGohel](https://twitter.com/DavidGohel), [`ggiraph`](https://davidgohel.github.io/ggiraph/index.html) &#x1F4E6;
 * Tampa R Users Group [@UseRTampa](https://twitter.com/UseRTampa/), the feedback gurus
-* [Emily Robinson](https://twitter.com/robinson_es) & [Jacqueline Nolis](https://twitter.com/skyetetra), gurus of writing [the best career book](https://www.manning.com/books/build-a-career-in-data-science)
+* [Emily Robinson](https://twitter.com/robinson_es) & [Jacqueline Nolis](https://twitter.com/skyetetra), gurus of writing the [bestbook.cool](https://www.bestbook.cool)
 
-&#x1F4FA; https://github.com/tgerke/unicoRns-are-real
+&#x1F4BB; https://github.com/tgerke/unicoRns-are-real <br>
+&#x1F4FA; https://unicorns-are-real.netlify.com/ <br>
+<img src="figures/twitter-brands.svg" alt="Twitter logo" width="24px"/> [@travisgerke](https://twitter.com/travisgerke)
 
-.w-25.h-center[
+.w-15.h-center[
 ![](figures/unicorn_hex.png)
 ]
 
@@ -517,6 +520,9 @@ p
 
 .moffitt-orange { color: #faa555; }
 
+.w-15 {
+  width: 15%;
+}
 .w-25 {
   width: 25%;
 }
