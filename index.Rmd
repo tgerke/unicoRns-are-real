@@ -373,7 +373,7 @@ avg_analyst <- avg_analyst %>%
 p <- avg_analyst %>% 
    mutate(Median = scales::dollar(`Data Scientist I`)) %>%
    ggplot(aes(lon, lat, group=group, text=text)) + 
-   borders("state", colour = "gray") + 
+   borders("state", colour = "gray", size = .2) + 
    coord_map(projection = "albers", lat0 = 39, lat1 = 45) + 
    ggiraph::geom_polygon_interactive(aes(fill=`Data Scientist I`, tooltip = text),
                 show.legend = TRUE, colour=NA, alpha=0.7) +
@@ -408,7 +408,7 @@ p
 --
 
 * This talk is not arguing for or against the current process
-   + Instead, reporting the pipeline that is common to large organizations to:
+   + Instead, it reports the pipeline that is common to large organizations to:
       + Empower you, the unicoRn, to capture the compensation you deserve
       + Empower managers to recruit and compensate the unicoRns they need 
 
