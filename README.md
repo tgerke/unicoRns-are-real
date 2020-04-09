@@ -1,12 +1,15 @@
 ## UnicoRns are real
 
 [slides]: https://unicoRns-are-real.netlify.com/
+[recording]: https://resources.rstudio.com/rstudio-conf-2020/unicorns-are-real-dr-travis-gerke
 
 Travis Gerke &#38; Donna Evans
 
 This is a 15-minute talk most recently given at [rstudio:conf 2020](https://web.cvent.com/event/36ebe042-0113-44f1-8e36-b9bc5d0733bf/).
 
 &#x1F4FA; [View slides][slides]
+
+&#x1F3A5; [Watch recording][recording]
 
 &#x270D;&#xFE0F; Abstract: 
 
